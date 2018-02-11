@@ -2,7 +2,7 @@
  * Created by ZK on 16/12/19.
  */
 
-var baseUlr = 'http://app.himoca.com:8080/';
+var baseUlr = 'http://api.himoca.com/';
 
 function getQueryStringArgs() {
     var qs = (location.search.length > 0 ? location.search.substring(1) : ''),

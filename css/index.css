@@ -6,18 +6,36 @@
 
 header {
     width: 100%;
-    background: #000;
+    background: #36274c;
     position: absolute;
     overflow: hidden;
 }
 
 header .title-img {
     width: 100%;
-    height: 100%;
-    background: url("../imgs/icon-title.png") no-repeat top center / 90%;
+    height: 300px;
+    background: #c8a6d4;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+header .title-img .title-goddess {
+  position: absolute;
+  width: 300px;
+  height: 230px;
+  text-align: center;
+  top: 20px;
+  left: 50%;
+  margin-left: -160px;
+}
+
+header .title-img .title-activity {
+  position: absolute;
+  width: 100px;
+  height: 53px;
+  right: 10px;
+  top: 10px;
 }
 
 header .title-img img.left {
@@ -36,14 +54,14 @@ header .title-img img.right {
 
 header .event-container {
     position: relative;
-    padding: 80% 22px 0;
+    padding: 315px 22px 0;
     z-index: 1000;
 }
 
 header .event-container .btn-event {
     display: inline-block;
-    color: #fff;
-    background: #ec44a1;
+    color: #7b00c9;
+    background: #9cd8e6;
     border-radius: 19px;
     width: 44%;
     height: 38px;
@@ -60,7 +78,7 @@ header .searchbar-container {
     height: 48px;
     position: relative;
     z-index: 0;
-    background: #000;
+    background: #36274c;
     text-align: left;
     margin: 10px auto 0 auto;
 }
@@ -84,13 +102,13 @@ header .searchbar-container .wrapper input {
     left: 0;
     z-index: 0;
     font-size: 14px;
-    color: #ef4faf;
+    color: #7b00c9;
     background: #fff;
     text-align: left;
 }
 
 ::-webkit-input-placeholder {
-    color: #ef4faf;
+    color: #7b00c9;
 }
 
 header .searchbar-container .wrapper img {
@@ -273,7 +291,7 @@ header .searchbar-container .wrapper img {
     width: auto;
     margin: 11%;
     padding: 15px;
-    background: #ec44a1;
+    background: #5e369d;
     color: #fff;
     border-radius: 7px;
 }

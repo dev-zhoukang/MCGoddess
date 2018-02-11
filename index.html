@@ -20,33 +20,34 @@
 <!--在这里, main标签的意义仅仅是撑开盒子, 把subpage放在里面(不是真正放在里面, 是iframe形式)-->
 <main>
 
-    <div id="rule-view" class="zk-modal">
-        <div class="zk-modal-content">
-            <p class="content">
-            <h2 class="title">奖品设置</h2>
-            1, 第一名将荣膺“摩擦2016年度女王”称号，同时获赠📱iphone7一台！<br>
-            2, 第二名将会获赠小秘书送出的9999朵鲜花！<br>
-            3, 第三名将会获得小秘书送出的999朵鲜花！<br>
-            </p>
-            <p class="content bottom-para">
-            <h2 class="title">活动规则</h2>
-            1, 视频认证用户均可报名，点击“我要报名”立即参与！<br>
-            2, 报名成功的用户会出现在参选名单内。<br>
-            3, 每朵鲜花可以为女神点亮一次。<br>
-            4.奖品评选以此活动排名为唯一依据。<br>
-            5, 活动截止时间为2017年1月3日24点整。<br>
-            6, 有疑问请联系客服：028-65789575。<br>
-            </p>
-        </div>
-    </div>
+  <div id="rule-view" class="zk-modal">
+      <div class="zk-modal-content">
+          <p class="content">
+          <h2 class="title">奖品设置</h2>
+          1, 活动期间人气最高的宝宝将会荣膺“摩擦2018年度女神”称号，同时获赠19999朵鲜花！<br>
+          2, 第二名将会获赠9999朵鲜花！<br>
+          3, 第三名将会获得999朵鲜花！<br>
+          </p>
+          <p class="content bottom-para">
+          <h2 class="title">活动规则</h2>
+          1, 只有视频认证的用户可以报名，点击上方“我要报名”即可参与！<br>
+          2, 活动时间：2018.2.14日0：00-2.21日24:00<br>
+          3, 报名成功的用户，头像会出现在参赛名单内。<br>
+          4, 每朵鲜花可以为女神点亮一次，活动期间不限次数。<br>
+          5, 如有任何疑问，请联系客服：028-65789575。<br>
+          6, 活动结束后1个工作日内，所有奖励将打入用户摩擦账号，本活动最终解释权归主办方所有。<br>
+          </p>
+      </div>
+  </div>
 
     <div id="pullrefresh" class="mui-content mui-scroll-wrapper zk-scroll-wrapper">
         <div class="mui-scroll">
             <canvas id="canvas" class="firework"></canvas>
             <header class="mui-clearfix">
                 <div class="title-img">
-                    <img class="left" src="imgs/icon-star.jpg" alt="" width="40" height="40">
-                    <img class="right rotate" src="imgs/icon-star.jpg" alt="" width="25" height="25">
+                  <img class="header-bg-img" src="imgs/icon-title.png" alt="" width="100%" height="100%">
+                  <img class="title-goddess" src="imgs/title_goddess.png" alt="">
+                  <img class="title-activity" src="imgs/header_img_name.png" alt="">
                 </div>
                 <div class="event-container mui-clearfix">
                     <a class="btn-event float-left" href="javascript:;" id="btn-signup">立即报名</a>
@@ -157,8 +158,15 @@
                     d = JSON.parse(d);
                 }
                 console.log(d);
+
+                if (d.userInfo) {
+                fromUID = d.userInfo.uid;
+                authStatus = d.userInfo.auth_status;
+              }
+              else {
                 fromUID = d.uid;
                 authStatus = d.auth_status;
+              }
                 initData();
             });
 //        })
