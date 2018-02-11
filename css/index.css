@@ -155,9 +155,9 @@ header .searchbar-container .wrapper img {
     left: 5px;
     text-align: center;
     line-height: 60px;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
-    color: #a5a5a5;
+    color: #fff;
 }
 
 .rank-cell .user-avatar-view {
@@ -212,7 +212,17 @@ header .searchbar-container .wrapper img {
 }
 
 .rank-cell .detail-container p {
+  position: relative;
     margin-bottom: 0;
+}
+
+.rank-cell .icon-vip {
+  display: inline-block;
+  width:40px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 0;
 }
 
 .rank-cell .detail-container p.nickname {
@@ -237,6 +247,7 @@ header .searchbar-container .wrapper img {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: #535353;
 }
 
 /*弹出窗*/
